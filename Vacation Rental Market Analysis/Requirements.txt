@@ -4,18 +4,24 @@ Requirements.
 - Download the data set and spend 10 minutes reviewing each sheet on the spreadsheets 
   and search for useful information and identify potential cleaning challenges.
 - Start cleaning the data and keep a history about the steps made.
-- Organize the spreadsheet by freezing rows and columns so it is easier to scroll, resize column widths and wrap text and add filters.
-- Filter the data that is not relevant for the analysis such as listings that have never been rented. 
+- Organize the spreadsheet by freezing rows and columns so it is easier to scroll, 
+  resize column widths and wrap text and add filters.
+- Filter the data that is not relevant for the analysis such as listings that have 
+  never been rented. 
 
   Part 2: Which type of property should be targeted?
 - Assume that “number_of_reviews_ltm” is the estimate of how often a listing is rented.
-- Clean the neighborhood column from the mix of uppercase, lowercase, mixed-case text and remove trailing spaces.
-- Create a pivot table to determine the top 10 most popular neighborhoods for vacation rentals.
-- Clean the bedroom columns and create a pivot table to determine the number of bedrooms of the top 10 popular neighborhoods.
+- Clean the neighborhood column from the mix of uppercase, lowercase, mixed-case text 
+  and remove trailing spaces.
+- Create a pivot table to determine the top 10 most popular neighborhoods for 
+  vacation rentals.
+- Clean the bedroom columns and create a pivot table to determine the number of 
+  bedrooms of the top 10 popular neighborhoods.
 
   Part 3: Calculating occupancy.
 - Clean and transform the data of the “available” column into a numerical value.
-- Determine which day is more popular by creating a column called “day_of_week” and using a function to determine the day.
+- Determine which day is more popular by creating a column called 
+  “day_of_week” and using a function to determine the day.
 - Create a pivot table to calculate the average occupancy calculation.
 
   Part 4: Estimate revenue for an investment property.
