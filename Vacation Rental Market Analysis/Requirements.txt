@@ -1,7 +1,8 @@
 Requirements.
 
   Part 1: Explore and Filter the Data.
-- Download the data set and spend 10 minutes reviewing each sheet on the spreadsheets and search for useful information and identify potential cleaning challenges.
+- Download the data set and spend 10 minutes reviewing each sheet on the spreadsheets 
+  and search for useful information and identify potential cleaning challenges.
 - Start cleaning the data and keep a history about the steps made.
 - Organize the spreadsheet by freezing rows and columns so it is easier to scroll, resize column widths and wrap text and add filters.
 - Filter the data that is not relevant for the analysis such as listings that have never been rented. 
