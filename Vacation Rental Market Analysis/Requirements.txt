@@ -1,16 +1,30 @@
 Requirements.
 
-Part 1: Explore and Filter the Data.
+  Part 1: Explore and Filter the Data.
+- Download the data set and spend 10 minutes reviewing each sheet on the spreadsheets and search for useful information and identify potential cleaning challenges.
+- Start cleaning the data and keep a history about the steps made.
+- Organize the spreadsheet by freezing rows and columns so it is easier to scroll, resize column widths and wrap text and add filters.
+- Filter the data that is not relevant for the analysis such as listings that have never been rented. 
 
+  Part 2: Which type of property should be targeted?
+- Assume that “number_of_reviews_ltm” is the estimate of how often a listing is rented.
+- Clean the neighborhood column from the mix of uppercase, lowercase, mixed-case text and remove trailing spaces.
+- Create a pivot table to determine the top 10 most popular neighborhoods for vacation rentals.
+- Clean the bedroom columns and create a pivot table to determine the number of bedrooms of the top 10 popular neighborhoods.
 
-Part 2: Which type of property should be targeted?
+  Part 3: Calculating occupancy.
+- Clean and transform the data of the “available” column into a numerical value.
+- Determine which day is more popular by creating a column called “day_of_week” and using a function to determine the day.
+- Create a pivot table to calculate the average occupancy calculation.
 
+  Part 4: Estimate revenue for an investment property.
+- Select properties similar to what an investor might purchase.
+- Recommend one of the top five neighborhoods and the optimal property size.
+- Add Occupancy Rates to Listings.
+- Calculate the average price and occupancy.
+- Estimate the annual revenue.
 
-Part 3: Calculating occupancy.
-
-
-Part 4: Estimate revenue for an investment property.
-
-
-Part 5: Documentation and spreadsheet formatting.
-
+  Part 5: Documentation and spreadsheet formatting.
+- Develop an Executive Summary and a Table of Contents.
+- Clearly document all assumptions made during the analysis.
+- Format the spreadsheet to enhance clarity and readability.
