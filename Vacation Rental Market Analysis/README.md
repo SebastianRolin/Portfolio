@@ -11,8 +11,9 @@ Throughout this project, I effectively applied the knowledge and skills acquired
 | ----------- |----------- |
 | README.md | This document contains all pertinent information regarding the project, including its objectives, methodologies, and findings. |
 | Requirements.txt | A text file listing the project's dependencies and requirements as specified by TripleTen. |
-| Vacation Rental Market Analysis | The dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation.|
+| Vacation Rental Market Analysis | The project I completed and submitted to TripleTen for review.|
 | Review N°1.1, 1.2, 1.3 & Final Review | A visual representation of feedback and comments provided by the project reviewer, offering insights into the project's evaluation and areas for improvement.  |
+| nyc.airbnb.data.xls | The raw dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation. |
 
 ### Section Description.
 
@@ -25,7 +26,7 @@ Throughout this project, I effectively applied the knowledge and skills acquired
 
 ### Data Overview.
 The data file was provided by TripleTen, the files is a CSV and all the processes were made using Google Spreadsheets.
-- `'nyc_airbnb_data.csv'`: The data from this file is from the airbnb listing from the month of september 2022 and it contains the following sheets.
+- `'Vacation Rental Market Analysis.csv'`: The data from this file is from the airbnb listing from the month of september 2022 and it contains the following sheets.
     - `'Data_dictionary(Raw)'`: Small description of the fields from the listings and calendar sheet, it also provides the data types.
     - `'listings(Raw)'`: Here we have in each row all the listings properties available.
     - `'calendar(Raw)'`: A list of the properties availability for 30 days.
