@@ -9,7 +9,7 @@ This marks the second project within the TripleTen bootcamp, where I'll apply th
 | File | Description |
 | ----------- |----------- |
 | README.md  | This document contains all pertinent information regarding the project, including its objectives, methodologies, and findings. |
-| [Requirements.txt](https://github.com/SebastianRolin/Portfolio/blob/main/Vacation%20Rental%20Market%20Analysis/Requirements.txt) | A text file listing the project's dependencies and requirements as specified by TripleTen. |
+| [Requirements.txt](https://github.com/SebastianRolin/Portfolio/blob/main/Zuber%20Analysis/Requirements.txt) | A text file listing the project's dependencies and requirements as specified by TripleTen. |
 | [Zuber Database Scheme.png](https://github.com/SebastianRolin/Portfolio/blob/main/Zuber%20Analysis/Zuber%20Database%20Scheme.png) | This png shows the relationship between tables used in this projects. 
 ### Section Description.
 
