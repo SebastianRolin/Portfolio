@@ -1,6 +1,6 @@
 # File name: Vacation Rental Market Analysis.
 
-Throughout this project, I effectively applied the knowledge and skills acquired during my participation in the "Advanced Spreadsheets" course within the TripleTen curriculum. Over the duration of the course, which coincided with my first spring term, I delved into various topics essential for proficient spreadsheet utilization. These encompassed understanding spreadsheet structures, managing diverse data types, harnessing a multitude of functions, executing data cleaning and pre-processing techniques, and leveraging pivot tables and charts for enhanced communication of analytical findings. The comprehensive training received through the course enabled me to adeptly navigate and manipulate data, resulting in more insightful and impactful analyses within the context of this project. [Here](https://docs.google.com/spreadsheets/d/16BqeMVC8iU_18BjpdTLVXn98V5ZIRwNHG6GKz3_FX9Q/edit#gid=122074218) you can have access the project
+Throughout this project, I effectively applied the knowledge and skills acquired during my participation in the "Advanced Spreadsheets" course within the TripleTen curriculum. Over the duration of the course, which coincided with my first spring term, I delved into various topics essential for proficient spreadsheet utilization. These encompassed understanding spreadsheet structures, managing diverse data types, harnessing a multitude of functions, executing data cleaning and pre-processing techniques, and leveraging pivot tables and charts for enhanced communication of analytical findings. The comprehensive training received through the course enabled me to adeptly navigate and manipulate data, resulting in more insightful and impactful analyses within the context of this project. [Here](https://docs.google.com/spreadsheets/d/16BqeMVC8iU_18BjpdTLVXn98V5ZIRwNHG6GKz3_FX9Q/edit#gid=122074218) you can have access the project final upload.
 
 [<img src="https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Vacation%20Rental%20Market%20Analysis%20Snapshot.png">](https://docs.google.com/spreadsheets/d/16BqeMVC8iU_18BjpdTLVXn98V5ZIRwNHG6GKz3_FX9Q/edit?pli=1#gid=122074218)
 
@@ -9,11 +9,11 @@ Throughout this project, I effectively applied the knowledge and skills acquired
 
 | File | Description |
 | ----------- |----------- |
-| README.md | This document contains all pertinent information regarding the project, including its objectives, methodologies, and findings. |
-| Requirements.txt | A text file listing the project's dependencies and requirements as specified by TripleTen. |
-| Vacation Rental Market Analysis | The project I completed and submitted to TripleTen for review.|
-| Review N°1.1, 1.2, 1.3 & Final Review | A visual representation of feedback and comments provided by the project reviewer, offering insights into the project's evaluation and areas for improvement.  |
-| nyc.airbnb.data.xls | The raw dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation. |
+| README.md  | This document contains all pertinent information regarding the project, including its objectives, methodologies, and findings. |
+| [Requirements.txt](https://github.com/SebastianRolin/Portfolio/blob/main/Vacation%20Rental%20Market%20Analysis/Requirements.txt) | A text file listing the project's dependencies and requirements as specified by TripleTen. |
+| [Vacation Rental Market Analysis](https://github.com/SebastianRolin/Portfolio/blob/main/Vacation%20Rental%20Market%20Analysis/Vacation%20Rental%20Market%20Analysis.xlsx) | The project I completed and submitted to TripleTen for review.|
+| [Review N°1.1, 1.2, 1.3 & Final Review](https://github.com/SebastianRolin/Portfolio/blob/main/Vacation%20Rental%20Market%20Analysis/Final%20Review.png) | A visual representation of feedback and comments provided by the project reviewer, offering insights into the project's evaluation and areas for improvement.  |
+| [nyc.airbnb.data.xls](https://github.com/SebastianRolin/Portfolio/blob/main/Vacation%20Rental%20Market%20Analysis/nyc_airbnb_data.xlsx) | The raw dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation. |
 
 ### Section Description.
 
