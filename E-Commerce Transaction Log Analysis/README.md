@@ -13,10 +13,10 @@ you can have access the project final upload.
 | File | Description |
 | ----------- |----------- |
 | README.md  | This document contains all pertinent information regarding the project, including its objectives, methodologies, and findings. |
-| [Requirements.txt]() | A text file listing the project's dependencies and requirements as specified by TripleTen. |
+| [Requirements.txt](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/Requirements.txt) | A text file listing the project's dependencies and requirements as specified by TripleTen. |
 | [E-Commerce Transaction Log Analysis](https://docs.google.com/spreadsheets/d/171sS1a2hmd0GbJ4Fpk6iVn9ngcWuwg8HsDea7sVlENA/edit?usp=sharing) | The project I completed and submitted to TripleTen for review.|
-| [Review.png]() | A visual representation of feedback and comments provided by the project reviewer, offering insights into the project's evaluation and areas for improvement.  |
-| [Business Analytics Project]() | The raw dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation. |
+| [Review.png](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/Review.png) | A visual representation of feedback and comments provided by the project reviewer, offering insights into the project's evaluation and areas for improvement.  |
+| [Business Analytics Project](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/Business%20Analytics%20Project.xlsx) | The raw dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation. |
 
 ### Section Description.
 
