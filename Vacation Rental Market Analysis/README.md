@@ -1,4 +1,4 @@
-# File Title: Vacation Rental Market Analysis.
+# File name: Vacation Rental Market Analysis.
 
 Throughout this project, I effectively applied the knowledge and skills acquired during my participation in the "Advanced Spreadsheets" course within the TripleTen curriculum. Over the duration of the course, which coincided with my first spring term, I delved into various topics essential for proficient spreadsheet utilization. These encompassed understanding spreadsheet structures, managing diverse data types, harnessing a multitude of functions, executing data cleaning and pre-processing techniques, and leveraging pivot tables and charts for enhanced communication of analytical findings. The comprehensive training received through the course enabled me to adeptly navigate and manipulate data, resulting in more insightful and impactful analyses within the context of this project.
 
