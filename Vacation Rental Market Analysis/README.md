@@ -1,11 +1,9 @@
 # File name: Vacation Rental Market Analysis.
 
-Throughout this project, I effectively applied the knowledge and skills acquired during my participation in the "Advanced Spreadsheets" course within the TripleTen curriculum. Over the duration of the course, which coincided with my first spring term, I delved into various topics essential for proficient spreadsheet utilization. These encompassed understanding spreadsheet structures, managing diverse data types, harnessing a multitude of functions, executing data cleaning and pre-processing techniques, and leveraging pivot tables and charts for enhanced communication of analytical findings. The comprehensive training received through the course enabled me to adeptly navigate and manipulate data, resulting in more insightful and impactful analyses within the context of this project.
+Throughout this project, I effectively applied the knowledge and skills acquired during my participation in the "Advanced Spreadsheets" course within the TripleTen curriculum. Over the duration of the course, which coincided with my first spring term, I delved into various topics essential for proficient spreadsheet utilization. These encompassed understanding spreadsheet structures, managing diverse data types, harnessing a multitude of functions, executing data cleaning and pre-processing techniques, and leveraging pivot tables and charts for enhanced communication of analytical findings. The comprehensive training received through the course enabled me to adeptly navigate and manipulate data, resulting in more insightful and impactful analyses within the context of this project. [Here](https://docs.google.com/spreadsheets/d/16BqeMVC8iU_18BjpdTLVXn98V5ZIRwNHG6GKz3_FX9Q/edit?pli=1#gid=122074218) you can have access the project
 
 [<img src="https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Vacation%20Rental%20Market%20Analysis%20Snapshot.png">](https://docs.google.com/spreadsheets/d/16BqeMVC8iU_18BjpdTLVXn98V5ZIRwNHG6GKz3_FX9Q/edit?pli=1#gid=122074218)
 
-
-For a brief overview, you can watch the explanatory video [here](link to video), and access the project spreadsheet [here](https://docs.google.com/spreadsheets/d/16BqeMVC8iU_18BjpdTLVXn98V5ZIRwNHG6GKz3_FX9Q/edit?pli=1#gid=122074218).
 
 ### File Description.
 
