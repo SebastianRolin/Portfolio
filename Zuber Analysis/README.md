@@ -1,4 +1,4 @@
-# File name: Zuber SQL Database.
+# Zuber SQL Database.
 
 This marks the second project within the TripleTen bootcamp, where I'll apply the SQL skills acquired through my second spring lessons
 
