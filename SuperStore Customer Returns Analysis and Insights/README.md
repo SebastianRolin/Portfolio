@@ -59,13 +59,13 @@ TripleTen provided an excel dataset to be used in tableau to make the analysis, 
 
 
 
-### Assumptions:
+### Assumptions.
 - I’ll utilize the Return Rate as our primary measure, as it offers a clearer insight into the percentage of returns attributed to each product,
 providing greater precision in our analysis.
 - For the customers with the highest return rate I filtered out all the customers with only one order.
 
 
-### Analysis Methodology:
+### Analysis Methodology.
 After reviewing the data provided in the Excel spreadsheet from TripleTen, I transitioned to the visualization tool Tableau. In Tableau, I imported the 
 Excel spreadsheet and performed a LEFT JOIN to merge the "Returns" table with the "Orders" table. To address the data type issue in the "Returned" field, I 
 created a calculated field that converts "Null" values to "0" and "Yes" values to "1." 
@@ -75,7 +75,7 @@ I developed three dashboard mockups. I then selected the most suitable mockup fo
 explain the dashboard and each of the visualizations in detail.
  
 
-### Data Insights:
+### Data Insights.
 1. The states of California, Utah, and Oregon exhibit return rates exceeding 40%
 2. Across the Western region, all subcategory products demonstrate return rates surpassing 30%, with some exceeding 50%
 3. Technology emerges as the predominant category with the highest return rates among all product categories
