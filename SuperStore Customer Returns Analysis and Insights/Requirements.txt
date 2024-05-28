@@ -1,0 +1,18 @@
+Part 1: Understand the reasons for the returned orders.
+- Create a scatter plot to explore the correlation between sales and total returns by product subcategory.
+- Develop a bar chart illustrating the return rate by product category.
+- Analyze the return rate by customer using customer names instead of customer IDs.
+- Gain insights into the percentage of return rates by state.
+- Investigate whether the return rate varies by season.
+- Generate two composite charts that showcase the return rate considering multiple factors.
+
+Part 2:  Create the dashboard using Tableau.
+- Design three mockups and select the most suitable one for the dashboard.
+- Create the chosen mockup template in Tableau.
+- Incorporate the worksheets into the dashboard template.
+
+Part 3: Make a 5 minute presentation of my analysis and dashboard.
+- Develop a preliminary narrative with captions for each Story Point.
+- Populate the Story Points with content using both existing and new worksheets.
+- Create dashboards to generate presentation-style slides.
+- Save a finalized version of your Tableau Story.
