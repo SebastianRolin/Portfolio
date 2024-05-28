@@ -44,17 +44,17 @@ The information in the database of the taxi company are these tables with their 
     - `'temperature'`: Temperature when the record was taken.
     - `'description'`: Brief description of weather conditions, e.g. "light rain" or "scattered clouds".
 
-### Assumptions:
+### Assumptions.
 - There is no direct link between the "trips" and "weather_records" tables in the database. However, they can be joined using the ride start time "trips.start_ts" and the weather record time "weather_records.ts".
 - The primary key for the "trips" table is "trip_id".
 - The primary key for the "cabs" table is "cab_id".
 - The primary key for the "neighborhoods" table is "neighborhood_id".
 - The primary key for the "weather_records" table is "record_id"
 
-### Analysis Methodology:
+### Analysis Methodology.
 This task involves a 6-step SQL query. The objective is to perform an exploratory data analysis to determine if the duration of rides from the “Loop” to “O’Hare International Airport” varies on rainy Saturdays. This analysis aims to identify patterns in passenger preferences and assess the impact of external factors on ride durations.
 
-### Data Insights:
+### Data Insights.
 1. The taxi company "Flash Cab" recorded the highest number of rides on November 15th-16th, 2017, with a total of 19,558 trips.
 2. For taxi companies containing the keyword "Yellow" or "Blue," "Blue Diamond" had the highest number of rides during November 1st-7th, 2017, with 6,764 trips.
 3. When comparing "Flash Cab" and "Taxi Affiliation Services" with all other companies for November 1st-7th, 2017, the total number of rides from "Other" companies was significantly higher than the combined total of the two most popular companies.
