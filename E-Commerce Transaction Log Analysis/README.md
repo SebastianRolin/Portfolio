@@ -14,7 +14,7 @@ you can have access the project final upload.
 | ----------- |----------- |
 | README.md  | This document contains all pertinent information regarding the project, including its objectives, methodologies, and findings. |
 | [Requirements.txt](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/Requirements.txt) | A text file listing the project's dependencies and requirements as specified by TripleTen. |
-| [E-Commerce Transaction Log Analysis](https://docs.google.com/spreadsheets/d/171sS1a2hmd0GbJ4Fpk6iVn9ngcWuwg8HsDea7sVlENA/edit?usp=sharing) | The project I completed and submitted to TripleTen for review.|
+| [E-Commerce Transaction Log Analysis](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/E-Commerce%20Transaction%20Log%20Analysis.xlsx) | The project I completed and submitted to TripleTen for review.|
 | [Review.png](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/Review.png) | A visual representation of feedback and comments provided by the project reviewer, offering insights into the project's evaluation and areas for improvement.  |
 | [Business Analytics Project](https://github.com/SebastianRolin/Portfolio/blob/main/E-Commerce%20Transaction%20Log%20Analysis/Business%20Analytics%20Project.xlsx) | The raw dataset supplied by TripleTen, utilized extensively throughout the project for analysis and insights generation. |
 
@@ -47,12 +47,12 @@ The spreadsheet consists of 8 pages and includes the following data
       - `'price'`: Price of the product, in USD.
       - `'event_date'`: Date of the user activity, in YYYY-MM-DD format.
 
-### Assumptions:
+### Assumptions.
 - The "raw_user_activity" sheet accurately captures all website activity within the specified timeframe.
 - Missing values or data inconsistencies are minimal and negligible.
 - The data format, including columns and data types, is correct and consistent.
 
-### Analysis Methodology:
+### Analysis Methodology.
 First, we explored the raw data by reviewing each sheet in the Google Spreadsheet. We began by creating a conversion funnel, as the executive team was interested 
 in understanding how effectively the website converts product page views into purchases. For this, we used data from the "raw_user_activity" sheet.
 
@@ -60,6 +60,6 @@ After developing the conversion funnel, we moved on to cohort analysis to build 
 Finally, we completed the project by calculating retention rates.
 
 
-### Data Insights:
+### Data Insights.
 1. Conversion Tunnel: The cohort analysis clearly shows a significant decline in user retention over time, indicating that most customers are not returning. To address this issue, we need to prioritize and improve our customer retention strategies.
 2. Retention Rates: In the first month, there is a significant drop in user numbers, and by the third month, the user base has nearly disappeared, with a retention rate of less than 1%.
