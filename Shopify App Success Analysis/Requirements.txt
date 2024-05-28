@@ -1,0 +1,13 @@
+Part 1: Apps Landscape.
+- Make a KPI card with the unique count of apps.
+- Make a chart with the reviews over time.
+- Make an interpretation of the reviews with the average rating.
+
+Part 2: Reviews
+- Create a new column in the reviews table named helpful_reviews using DAX and make a card with the average value.
+- Create a new column in the Reviews table named “developer_answered” using DAX expression and make a scatterplot comparing the average rating and the developer_answered.
+
+Part 3: Apps reviews.
+- Create a new relationship between reviews and table and use the new table to make a bar chart with the developer and sum of rating.
+- Make a new bar chart with the developer and the average of helpful reviews.
+- Make a bar chart to understand which developer is the most responsive.
