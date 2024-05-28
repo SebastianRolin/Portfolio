@@ -31,7 +31,7 @@ you can have access the project final upload.
 The data file was provided by TripleTen in CSV format, and all processes were conducted using Google Spreadsheets. 
 The spreadsheet consists of 8 pages and includes the following data
 
-- `'Business Analyst Project.csv'`: raw transaction logs.
+- `'Business Analyst Project.csv'`: Raw transaction logs.
     - `'Table of Contents'`: This front page describes each sheet, using color coding to distinguish between raw data, calculations, analysis, and summary.
     - `'Executive Summary'`: This page contains the results of the cohort analysis and retention rates, as well as an analysis and description of the raw data, conversion funnel, and retention rates.
     - `'conversion_funnel'`: This section presents the conversion funnel based on the various actions taken by users on the website, using data from the "raw_user_activity" sheet.
