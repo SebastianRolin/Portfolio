@@ -1,4 +1,4 @@
-# File name: E-Commerce Transaction Log Analysis: Business Analytics Project.
+# E-Commerce Transaction Log Analysis: Business Analytics Project.
 
 As part of the TripleTen program, this project aims to convert event logs into valuable business metrics. The key objectives include 
 building a conversion funnel, conducting cohort analysis, and calculating retention rates. These skills, among others, were acquired during 
