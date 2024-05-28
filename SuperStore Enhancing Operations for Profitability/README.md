@@ -22,7 +22,7 @@ you can have access the project final upload.
 
 | Section Title | Description |
 | ----------- |----------- |
-| Data Overview | This section provides a comprehensive description of the data utilized in the project, outlining the files and their corresponding sheets. |
+| Data Overview | This section provides a comprehensive description of the data utilized in the project, outlining the files and their corresponding information. |
 | Assumptions | Here, you'll find a detailed description of the assumptions made during the analysis process, derived from both the data files and assumptions provided by TripleTen. |
 | Analysis Methodology | Offering a broad overview, this section outlines the process undertaken to analyze the data, spanning from initial data ingestion to final insights extraction. |
 | Data Insights | Contained within this section are the key insights derived from the analysis of the dataset, shedding light on significant trends, patterns, and discoveries uncovered during the project. |
@@ -36,13 +36,13 @@ The spreadsheet consists of 8 pages and includes the following data
     - `'returns'`: Contains detailed information for each returned item.
 
 
-### Assumptions:
+### Assumptions.
 - The willingness to pay for advertising is determined based on the return on ad spend (ROAS) ratio. I decided to allocate 1/5 of the advertising profit
 for this purpose. 
 - To handle the returned field, I created a calculated field where "null" values are converted to "0" and "Yes" values are converted to "1".
 
 
-### Analysis Methodology:
+### Analysis Methodology.
 After spending some time examining the data and understanding its structure, I began by identifying the key areas of profit and loss in the online store. I analyzed 
 the profits and losses across different regions and found that our largest losses come from the Central and East regions. Specifically, within the Central region, 
 the sub-category with the biggest loss is binders, and in the East region, it is tables. Based on this analysis, I identified which products the store should stop 
@@ -53,7 +53,7 @@ final section of this project, I provided insights into which customers have the
 I created a visualization showing the average profit against the average return rate by state. 
 
 
-### Data Insights:
+### Data Insights.
 1. Tables (East region) and binders (Central region) are the subcategories with the highest losses.
 2. The store has five poorly performing products, with "TEC-MA-10000418" being the worst, incurring over $20k in losses.
 3. The best performing products are "copiers," generating over $75k in profit, followed by "phones" with more than $55k.
