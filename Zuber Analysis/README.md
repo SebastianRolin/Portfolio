@@ -15,7 +15,7 @@ This marks the second project within the TripleTen bootcamp, where I'll apply th
 
 | Section Title | Description |
 | ----------- |----------- |
-| Data Overview | This section provides a comprehensive description of the data utilized in the project, outlining the files and their corresponding sheets. |
+| Data Overview | This section provides a comprehensive description of the data utilized in the project. |
 | Assumptions | Here, you'll find a detailed description of the assumptions made during the analysis process, derived from both the data files and assumptions provided by TripleTen. |
 | Analysis Methodology | Offering a broad overview, this section outlines the process undertaken to analyze the data, spanning from initial data ingestion to final insights extraction. |
 | Data Insights | Contained within this section are the key insights derived from the analysis of the dataset, shedding light on significant trends, patterns, and discoveries uncovered during the project. |
