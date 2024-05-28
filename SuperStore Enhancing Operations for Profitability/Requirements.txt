@@ -1,0 +1,14 @@
+Part 1: Profit & Losses.
+- Use visualization to identify the two largest profit and loss centers by analyzing pairs of dimensions.
+- Utilize visualization to identify products that should be discontinued.
+- Identify three product subcategories to prioritize and three to discontinue through visualization.
+
+Part 2: Advertising.
+- Identify the top three state-month combinations for advertising by analyzing average profit.
+- Determine the maximum advertising budget for each state-month based on the return on ad spend (1/5 of profits).
+
+Part 3: Return Rate.
+- Utilize visualizations to identify products with the highest return rates.
+- Employ visualizations to identify customers with the highest return rates.
+- Conduct an analysis of average profit versus average return rate for a selected dimension.
+- Present a visual argument advocating for either continuing or discontinuing business based on the findings of the analysis.
