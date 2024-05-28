@@ -39,18 +39,18 @@ The data file was provided by TripleTen, the files is a CSV and all the processe
     - `'Average Occupancy for each listing'`: A pivot table with the average occupancy rate from each listing using listing_id.
     - `'Best Day for Renting'`: Using the information from Calendar(Processed) I created a pivot table to understand what days have a higher occupancy rate.
 
-### Assumptions:
+### Assumptions.
 - Listings without data in the columns first and last review are going to be categorized as listings never been rented and therefore removed from the analysis.
 - I’m going to use “number_of_reviews_ltm” as a proxy for gauging how frequently the listings are rented.
 - Listings without reviews over the last 12 months are removed.
 - The listings will have a maximum of 7 nights or less since the client is focusing only on vacation rentals.
 - I'm going to use only properties with a rent price between $200.00 to $1000.00 
 
-### Analysis Methodology:
+### Analysis Methodology.
 In the initial data exploration phase, I identified and processed columns containing actionable insights, creating a refined version of the dataset. I performed data cleansing by removing redundant columns, filtering out listings without reviews, and standardizing data formatting. Leveraging pivot tables, I extracted key insights such as occupancy rates, estimated revenue, optimal rental days, and ROI analysis.
 
-### Data Insights:
+### Data Insights.
 1. Top 10 Attractive Neighborhoods: In this analysis, the research has unveiled the top 10 most attractive neighborhoods for vacation rentals, each presenting unique opportunities for investment and revenue generation. These neighborhoods include Hell's Kitchen, Lower East Side, Harlem, Midtown, Upper West Side, Chelsea, East Village, East Harlem, West Village, and Nolita. Each neighborhood offers distinct characteristics and appeal, providing potential investors with a diverse range of options to explore.		
 2. Popular Vacation Rental Sizes: Additionally, the analysis highlights trends in vacation rental sizes and occupancy rates. One-bedroom units emerge as the most popular configuration overall, with Lower East Side exhibiting particularly high demand for this size. Furthermore, 2-bedroom units in Hell's Kitchen and studio apartments in Midtown are identified as desirable options for renters.			
-3. Occupancy Rate by Day: Moreover, the study delves into the dynamics of occupancy rates by day, revealing that Mondays and Tuesdays consistently experience the highest occupancy rates throughout the week. This insight into booking behavior can inform pricing strategies and resource allocation for property management.			
+3. Occupancy Rate by Day: Moreover, the study delves into the dynamics of occupancy rates by day, revealing that Mondays and Tuesdays consistently experience the highest occupancy rates throughout the week. This insight into booking behavior can inform pricing strategies and resource allocation for property management.		
 4. Return on Investment (ROI) Analysis: Finally, the analysis examines the return on investment (ROI) potential of select neighborhoods. While "Nolita" showcases an impressive annual return exceeding $70,000, it's noted that only one listing is available based on filtered data. Conversely, "Lower East Side" presents three available properties, demonstrating the potential for a combined annual return surpassing $100,000.		
