@@ -54,6 +54,26 @@ The information in the database of the taxi company are these tables with their 
 ### Analysis Methodology.
 This task involves a 6-step SQL query. The objective is to perform an exploratory data analysis to determine if the duration of rides from the “Loop” to “O’Hare International Airport” varies on rainy Saturdays. This analysis aims to identify patterns in passenger preferences and assess the impact of external factors on ride durations.
 
+**Task N-1.** 
+
+The task is to find the number of taxi rides for each taxi company from November 15 to 16, 2027. We use the SELECT statement to specify the columns: company_name from the cabs table and the count of trip_id using the COUNT aggregate function, which we alias as trips_amount. In the FROM clause, we JOIN the cabs and trips tables on trips.cab_id = cabs.cab_id. We use the WHERE clause to filter the start_ts dates between November 15 and 16, 2027, casting trips.start_ts to the DATE type. Finally, we GROUP BY company_name and ORDER BY trips_amount in descending order to list companies by the number of trips in that period.
+
+```sql
+SELECT
+    start_ts,
+    weather_conditions,
+    duration_seconds
+FROM trips
+INNER JOIN (SELECT
+    ts,
+    CASE WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad' ELSE 
+    'Good' END AS weather_conditions
+        FROM weather_records)
+T ON T.ts = trips.start_ts
+WHERE pickup_location_id = 50 AND dropoff_location_id = 63 AND EXTRACT (DOW from trips.start_ts) = 6
+ORDER BY trip_id;
+```
+
 ### Data Insights.
 1. The taxi company "Flash Cab" recorded the highest number of rides on November 15th-16th, 2017, with a total of 19,558 trips.
 2. For taxi companies containing the keyword "Yellow" or "Blue," "Blue Diamond" had the highest number of rides during November 1st-7th, 2017, with 6,764 trips.
