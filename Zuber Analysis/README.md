@@ -56,7 +56,16 @@ This task involves a 6-step SQL query. The objective is to perform an explorator
 
 **Task N-1.** 
 
-The task is to find the number of taxi rides for each taxi company from November 15 to 16, 2027. We use the SELECT statement to specify the columns: company_name from the cabs table and the count of trip_id using the COUNT aggregate function, which we alias as trips_amount. In the FROM clause, we JOIN the cabs and trips tables on trips.cab_id = cabs.cab_id. We use the WHERE clause to filter the start_ts dates between November 15 and 16, 2027, casting trips.start_ts to the DATE type. Finally, we GROUP BY company_name and ORDER BY trips_amount in descending order to list companies by the number of trips in that period.
+The first task is to find the number of taxi rides for each taxi company from November 15 to 16, 2027. To achieve this I use the following steps:
+ 1- Select the company name from the cabs table and alias it as company_name.
+ 2- Count the number of trips by using the COUNT function on trip_id from the trips table and 
+ alias it as trips_amount.
+ 3- Join the cabs and trips tables using an INNER JOIN on the cab_id column.
+ 4- Filter the trips to only include those that occurred between November 15 and 16, 2027, by 
+ casting trips.start_ts to a DATE.
+ 5- Group the results by company name to get the trip counts for each company.
+ 6- Order the results by trips_amount in descending order to list companies by the number of 
+ trips during that period.
 
 ```sql
 SELECT
