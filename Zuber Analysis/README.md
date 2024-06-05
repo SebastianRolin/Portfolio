@@ -87,7 +87,7 @@ ORDER BY trips_amount DESC;
 
 **Task N-2.** 
 
-For the second task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
+For this task, we need to count the number of rides from the most popular taxi companies, "Flash Cab" and "Taxi Affiliation Services," and group rides from all other companies under the category "Other" for the dates of November 1-7, 2017.
 
 1- Select the company name from the cabs table and alias it as company_name.
 
@@ -127,6 +127,45 @@ WHERE
    AND cabs.company_name LIKE '%%Blue%%'
 GROUP BY
     company_name
+```
+
+**Task N-3.** 
+
+For the second task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
+
+1- CASE statement: Categorizes company_name into 'Flash Cab', 'Taxi Affiliation Services', or 'Other'.
+
+- If the company name is "Flash Cab", it is labeled as 'Flash Cab'.
+
+- If the company name is "Taxi Affiliation Services", it is labeled as 'Taxi Affiliation Services'.
+
+- For all other company names, they are labeled as 'Other'.
+
+2- COUNT function: Counts the number of trips (trip_id) and aliases it as trips_amount.
+
+3- INNER JOIN: Joins the cabs and trips tables on cab_id.
+
+4- WHERE clause: Filters the trips to include only those between November 1 and 7, 2017.
+
+5- CAST(trips.start_ts AS DATE) ensures the date is in the correct format for comparison.
+
+6- GROUP BY clause: Groups the results by the categorized company name (company).
+
+7- ORDER BY clause: Sorts the results in descending order by trips_amount.
+
+```sql
+SELECT
+    CASE WHEN company_name =  'Flash Cab' THEN 'Flash Cab'
+    WHEN company_name = 'Taxi Affiliation Services' THEN 'Taxi Affiliation Services'
+    ELSE 'Other'
+    END AS company,
+    COUNT (trips.trip_id) AS trips_amount
+FROM
+    cabs
+    INNER JOIN trips ON trips.cab_id = cabs.cab_id
+WHERE CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND  '2017-11-07'
+GROUP BY company
+ORDER BY trips_amount DESC;
 ```
 
 ### Data Insights.
