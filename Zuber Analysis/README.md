@@ -57,30 +57,76 @@ This task involves a 6-step SQL query. The objective is to perform an explorator
 **Task N-1.** 
 
 The first task is to find the number of taxi rides for each taxi company from November 15 to 16, 2027. To achieve this I use the following steps:
- 1- Select the company name from the cabs table and alias it as company_name.
- 2- Count the number of trips by using the COUNT function on trip_id from the trips table and 
- alias it as trips_amount.
- 3- Join the cabs and trips tables using an INNER JOIN on the cab_id column.
- 4- Filter the trips to only include those that occurred between November 15 and 16, 2027, by 
- casting trips.start_ts to a DATE.
- 5- Group the results by company name to get the trip counts for each company.
- 6- Order the results by trips_amount in descending order to list companies by the number of 
- trips during that period.
+
+1- Select the company name from the cabs table and alias it as company_name.
+
+2- Count the number of trips by using the COUNT function on trip_id from the trips table and 
+alias it as trips_amount.
+
+3- Join the cabs and trips tables using an INNER JOIN on the cab_id column.
+
+4- Filter the trips to only include those that occurred between November 15 and 16, 2027, by 
+casting trips.start_ts to a DATE.
+
+5- Group the results by company name to get the trip counts for each company.
+
+6- Order the results by trips_amount in descending order to list companies by the number of 
+trips during that period.
 
 ```sql
 SELECT
-    start_ts,
-    weather_conditions,
-    duration_seconds
-FROM trips
-INNER JOIN (SELECT
-    ts,
-    CASE WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad' ELSE 
-    'Good' END AS weather_conditions
-        FROM weather_records)
-T ON T.ts = trips.start_ts
-WHERE pickup_location_id = 50 AND dropoff_location_id = 63 AND EXTRACT (DOW from trips.start_ts) = 6
-ORDER BY trip_id;
+    cabs.company_name AS company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM
+    cabs
+    INNER JOIN trips ON trips.cab_id = cabs.cab_id
+    WHERE CAST(trips.start_ts AS date) BETWEEN '2017-11-15' AND  '2017-11-16'
+GROUP BY company_name
+ORDER BY trips_amount DESC;
+```
+
+**Task N-2.** 
+
+For the second task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
+
+1- Select the company name from the cabs table and alias it as company_name.
+
+2- Count the number of trips by using the COUNT function on trip_id from the trips table and alias it as trips_amount.
+
+3- Join the cabs and trips tables using an INNER JOIN on the cab_id column.
+
+4- Filter the trips to only include those that occurred between November 1st and 7th, 2017 by casting trips.start_ts to a DATE.
+
+5- Filter the companies to include only those whose names contain "Yellow" or "Blue".
+
+6- Group the results by company name to get the trip counts for each relevant company.
+
+7- Use UNION ALL to combine the results for companies with "Yellow" and "Blue" in their names.
+
+```sql
+SELECT
+    cabs.company_name AS company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM
+    cabs
+INNER JOIN trips ON trips.cab_id = cabs.cab_id
+WHERE
+   CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND '2017-11-07'
+   AND cabs.company_name LIKE '%%Yellow%%'
+GROUP BY
+    company_name
+UNION ALL
+SELECT
+    cabs.company_name AS company_name,
+    COUNT(trips.trip_id) AS trips_amount
+FROM
+    cabs
+INNER JOIN trips ON trips.cab_id = cabs.cab_id
+WHERE
+   CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND '2017-11-07'
+   AND cabs.company_name LIKE '%%Blue%%'
+GROUP BY
+    company_name
 ```
 
 ### Data Insights.
