@@ -84,6 +84,7 @@ FROM
 GROUP BY company_name
 ORDER BY trips_amount DESC;
 ```
+<img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%201.png>
 
 **Task N-2.** 
 
@@ -128,6 +129,7 @@ WHERE
 GROUP BY
     company_name
 ```
+<img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%202.png>
 
 **Task N-3.** 
 
@@ -167,6 +169,8 @@ WHERE CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND  '2017-11-07'
 GROUP BY company
 ORDER BY trips_amount DESC;
 ```
+<img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Result%20Task%203.png>
+
 **Task N-4.**
 The forth task consist of retrieving the identifiers and names of the "O'Hare" and "Loop" neighborhoods from the neighborhoods table. I will select the neighborhood_id and name columns for these neighborhoods:
 
@@ -189,6 +193,7 @@ FROM
 WHERE
     name LIKE '%Hare' OR name LIKE 'Loop'
 ```
+<img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%204.png>
 
 **Task N-5.**
 The task is to retrieve the weather condition records for each hour from the weather_records table. Using the CASE operator, categorize the hours into two groups based on the description field: 'Bad' if it contains the words "rain" or "storm", and 'Good' for all other descriptions. The resulting field should be named weather_conditions. The final table should include two fields: the timestamp (ts) and weather_conditions.
@@ -211,6 +216,7 @@ SELECT
 FROM
     weather_records;
 ```
+<img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%205.png>
 
 **Task N-6.**
 
@@ -266,6 +272,7 @@ WHERE
 ORDER BY
     trips.trip_id;
 ```
+<img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%206.png>
 
 ### Data Insights.
 1. The taxi company "Flash Cab" recorded the highest number of rides on November 15th-16th, 2017, with a total of 19,558 trips.
