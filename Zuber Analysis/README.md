@@ -131,7 +131,7 @@ GROUP BY
 
 **Task N-3.** 
 
-For the second task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
+For the third task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
 
 1- CASE statement: Categorizes company_name into 'Flash Cab', 'Taxi Affiliation Services', or 'Other'.
 
@@ -166,6 +166,105 @@ FROM
 WHERE CAST(trips.start_ts AS date) BETWEEN '2017-11-01' AND  '2017-11-07'
 GROUP BY company
 ORDER BY trips_amount DESC;
+```
+**Task N-4.**
+The forth task consist of retrieving the identifiers and names of the "O'Hare" and "Loop" neighborhoods from the neighborhoods table. I will select the neighborhood_id and name columns for these neighborhoods:
+
+1- SELECT clause: Retrieves the neighborhood_id and name columns from the neighborhoods table.
+
+2- FROM clause: Specifies the neighborhoods table as the source of the data.
+
+3- WHERE clause: Filters the rows to include only those where the name ends with "Hare" or is exactly "Loop":
+
+- name LIKE '%Hare' matches any neighborhood name that ends with "Hare" (e.g., "O'Hare").
+
+- name LIKE 'Loop' matches the neighborhood name "Loop"
+
+```sql
+SELECT
+    neighborhood_id,
+    name
+FROM
+    neighborhoods
+WHERE
+    name LIKE '%Hare' OR name LIKE 'Loop'
+```
+
+**Task N-5.**
+The task is to retrieve the weather condition records for each hour from the weather_records table. Using the CASE operator, categorize the hours into two groups based on the description field: 'Bad' if it contains the words "rain" or "storm", and 'Good' for all other descriptions. The resulting field should be named weather_conditions. The final table should include two fields: the timestamp (ts) and weather_conditions.
+
+1- SELECT clause: Retrieves the ts column and uses the CASE operator to create a new field weather_conditions.
+
+- ts: The timestamp of the weather record.
+
+- CASE WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad' ELSE 'Good' END AS weather_conditions: Categorizes the weather condition as 'Bad' if the description contains "rain" or "storm", otherwise as 'Good'.
+
+2- FROM clause: Specifies the weather_records table as the source of the data.
+
+```sql
+SELECT
+    ts,
+    CASE 
+        WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad' 
+        ELSE 'Good' 
+    END AS weather_conditions
+FROM
+    weather_records;
+```
+
+**Task N-6.**
+
+For the last task I have to retrieve from the trips table all rides that started in the Loop (pickup_location_id: 50) on a Saturday and ended at O'Hare (dropoff_location_id: 63). For each ride, get the weather conditions using the method applied previously, and retrieve the duration of each ride. Ignore rides for which weather conditions data is not available. The result should include the following columns in this order: start_ts, weather_conditions, and duration_seconds. The results should be sorted by trip_id.
+
+1- SELECT clause: Retrieves the required columns from the trips and weather (subquery) tables:
+
+- trips.start_ts: The timestamp when the ride started.
+
+- weather.weather_conditions: The weather conditions determined by the subquery.
+
+- trips.duration_seconds: The duration of the ride in seconds.
+
+2- FROM clause: Specifies the trips table as the main source of data.
+
+3- INNER JOIN clause: Joins the trips table with the result of a subquery named weather:
+
+- The subquery selects ts and categorizes the weather as 'Bad' if the description contains "rain" or "storm", otherwise as 'Good'.
+
+- The join is performed on matching start_ts from trips and ts from the subquery.
+
+4- WHERE clause: Filters the rides to include only those that:
+
+- Have a pickup_location_id of 50 (Loop).
+
+- Have a dropoff_location_id of 63 (O'Hare).
+
+- Started on a Saturday (determined by EXTRACT(DOW FROM trips.start_ts) = 6).
+
+5- ORDER BY clause: Sorts the results by trip_id in ascending order.
+
+```sql
+SELECT
+    trips.start_ts,
+    weather.weather_conditions,
+    trips.duration_seconds
+FROM
+    trips
+INNER JOIN (
+    SELECT
+        ts,
+        CASE 
+            WHEN description LIKE '%rain%' OR description LIKE '%storm%' THEN 'Bad' 
+            ELSE 'Good' 
+        END AS weather_conditions
+    FROM
+        weather_records
+) AS weather ON weather.ts = trips.start_ts
+WHERE
+    trips.pickup_location_id = 50
+    AND trips.dropoff_location_id = 63
+    AND EXTRACT(DOW FROM trips.start_ts) = 6
+ORDER BY
+    trips.trip_id;
 ```
 
 ### Data Insights.
