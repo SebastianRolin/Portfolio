@@ -54,9 +54,7 @@ The information in the database of the taxi company are these tables with their 
 ### Analysis Methodology.
 This task involves a 6-step SQL query. The objective is to perform an exploratory data analysis to determine if the duration of rides from the “Loop” to “O’Hare International Airport” varies on rainy Saturdays. This analysis aims to identify patterns in passenger preferences and assess the impact of external factors on ride durations.
 
-**Task N-1.** 
-
-The first task is to find the number of taxi rides for each taxi company from November 15 to 16, 2027. To achieve this I use the following steps:
+**Task N-1:** The first task is to find the number of taxi rides for each taxi company from November 15 to 16, 2027. To achieve this I use the following steps:
 
 1- Select the company name from the cabs table and alias it as company_name.
 
@@ -86,9 +84,7 @@ ORDER BY trips_amount DESC;
 ```
 <img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%201.png>
 
-**Task N-2.** 
-
-For this task, we need to count the number of rides from the most popular taxi companies, "Flash Cab" and "Taxi Affiliation Services," and group rides from all other companies under the category "Other" for the dates of November 1-7, 2017.
+**Task N-2:** For this task, we need to count the number of rides from the most popular taxi companies, "Flash Cab" and "Taxi Affiliation Services," and group rides from all other companies under the category "Other" for the dates of November 1-7, 2017.
 
 1- Select the company name from the cabs table and alias it as company_name.
 
@@ -131,9 +127,7 @@ GROUP BY
 ```
 <img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%202.png>
 
-**Task N-3.** 
-
-For the third task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
+**Task N-3:** For the third task, I need to count the number of rides made between November 1st and 7th, 2017. We are specifically interested in taxi companies whose names contain the words "Yellow" or "Blue".To achieve this:
 
 1- CASE statement: Categorizes company_name into 'Flash Cab', 'Taxi Affiliation Services', or 'Other'.
 
@@ -171,8 +165,7 @@ ORDER BY trips_amount DESC;
 ```
 <img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Result%20Task%203.png>
 
-**Task N-4.**
-The forth task consist of retrieving the identifiers and names of the "O'Hare" and "Loop" neighborhoods from the neighborhoods table. I will select the neighborhood_id and name columns for these neighborhoods:
+**Task N-4:** The forth task consist of retrieving the identifiers and names of the "O'Hare" and "Loop" neighborhoods from the neighborhoods table. I will select the neighborhood_id and name columns for these neighborhoods:
 
 1- SELECT clause: Retrieves the neighborhood_id and name columns from the neighborhoods table.
 
@@ -195,8 +188,7 @@ WHERE
 ```
 <img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%204.png>
 
-**Task N-5.**
-The task is to retrieve the weather condition records for each hour from the weather_records table. Using the CASE operator, categorize the hours into two groups based on the description field: 'Bad' if it contains the words "rain" or "storm", and 'Good' for all other descriptions. The resulting field should be named weather_conditions. The final table should include two fields: the timestamp (ts) and weather_conditions.
+**Task N-5:** The task is to retrieve the weather condition records for each hour from the weather_records table. Using the CASE operator, categorize the hours into two groups based on the description field: 'Bad' if it contains the words "rain" or "storm", and 'Good' for all other descriptions. The resulting field should be named weather_conditions. The final table should include two fields: the timestamp (ts) and weather_conditions.
 
 1- SELECT clause: Retrieves the ts column and uses the CASE operator to create a new field weather_conditions.
 
@@ -218,9 +210,7 @@ FROM
 ```
 <img src=https://github.com/SebastianRolin/Portfolio/blob/main/Extra%20Resources/Zuber%20Analysis%20Results/Results%20Task%205.png>
 
-**Task N-6.**
-
-For the last task I have to retrieve from the trips table all rides that started in the Loop (pickup_location_id: 50) on a Saturday and ended at O'Hare (dropoff_location_id: 63). For each ride, get the weather conditions using the method applied previously, and retrieve the duration of each ride. Ignore rides for which weather conditions data is not available. The result should include the following columns in this order: start_ts, weather_conditions, and duration_seconds. The results should be sorted by trip_id.
+**Task N-6:** For the last task I have to retrieve from the trips table all rides that started in the Loop (pickup_location_id: 50) on a Saturday and ended at O'Hare (dropoff_location_id: 63). For each ride, get the weather conditions using the method applied previously, and retrieve the duration of each ride. Ignore rides for which weather conditions data is not available. The result should include the following columns in this order: start_ts, weather_conditions, and duration_seconds. The results should be sorted by trip_id.
 
 1- SELECT clause: Retrieves the required columns from the trips and weather (subquery) tables:
 
